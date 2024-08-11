@@ -14,7 +14,7 @@ const Footer = () => {
                     <div className="footer__phone">+7 778 900 67 21</div>
                     <div className="footer__address">010000, Республика Казахстан, город Астана,
                         ул. Казыбек би, 15</div>
-                    <a href="mailto:example@example.com" className="footer__mail">bergen_tour@mail.ru</a>
+                    <a href="mailto:bergen_tour@mail.ru" className="footer__mail">bergen_tour@mail.ru</a>
                     <div className="footer__bin">БИН/ИИН 940921450614</div>
                 </div>
                 <nav className="footer__nav">

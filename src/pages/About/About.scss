@@ -1,0 +1,101 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+html, body {
+    height: 100%;
+}
+
+main {
+    flex: 1; 
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('../../assets/images/bg_bag.jpg') center center/cover no-repeat;
+    padding: 100px 200px;
+
+    @media screen and (max-width: 1440px) {
+        padding: 100px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding: 50px;
+    }
+
+    @media screen and (max-width: 768px) {
+        background: none;
+        background-color: #B1D6F1;
+    }
+
+    @media screen and (max-width: 375px) {
+        padding: 20px;
+    }
+
+    &__container {
+        width: 700px;
+
+        @media screen and (max-width: 1440px) {
+            width: 500px;
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 300px;
+        }
+
+        @media screen and (max-width: 375px) {
+            width: 280px;
+        }
+    }
+
+    &__title {
+        @include text-styles(38px, 700, $blue-color);
+
+        @media screen and (max-width: 768px) {
+            font-size: 28px;
+        }
+    }
+
+    &__subtitle {
+        @include text-styles(38px, 400, $blue-color);
+        font-style: italic;
+
+        @media screen and (max-width: 768px) {
+            font-size: 28px;
+        }
+    }
+
+    &__list {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media screen and (max-width: 1440px) {
+            width: 350px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            width: 300px;
+        }
+        
+        &-item {
+            @include text-styles(20px, 400, $black-color);
+            text-transform: uppercase;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+            }
+
+            img {
+                height: 32px;
+                width: 32px;
+            }
+        }
+    }
+}
