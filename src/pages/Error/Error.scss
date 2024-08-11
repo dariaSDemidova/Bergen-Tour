@@ -1,0 +1,21 @@
+@import '../../styles/mixins';
+
+.error {
+    padding: 150px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    &__title {
+        @include text-styles(100px, 600, $orange-color);
+    }
+
+    &__subtitle {
+        @include text-styles(36px, 400, $orange-color);
+    }
+
+    &__button {
+        @include button;
+    }
+}

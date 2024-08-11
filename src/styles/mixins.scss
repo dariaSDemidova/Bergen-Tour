@@ -1,0 +1,26 @@
+@import './variables';
+
+@mixin text-styles($font-size, $font-weight, $color) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $color;
+}
+
+@mixin button {
+    height: 50px;
+    width: 250px;
+    background: $blue-color;
+    transition: 0.4s;
+    font-weight: 700;
+    font-size: 16px;
+    color: $white-color;
+    border-radius: 50px;
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+        background: $white-color;
+        color: $blue-color;
+        border: 1px solid $blue-color;
+    }
+}
