@@ -2,13 +2,19 @@ import { useState } from 'react';
 import logo from '../../assets/icons/logo.svg';
 import whatsapp from '../../assets/icons/whatsapp.svg';
 import { Link } from 'react-router-dom';
+import Popup from '../Popup/Popup';
 import './Header.scss';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
+    };
+
+    const togglePopup = () => {
+        setIsPopupOpen(!isPopupOpen);
     };
 
     return (
@@ -32,7 +38,7 @@ const Header = () => {
                             <div className="contacts__phone">+7 778 900 67 21</div>
                         </div>
                     </div>
-                    <button id="contacts__button" className="contacts__button">заказать обратный звонок</button>
+                    <button id="contacts__button" className="contacts__button" onClick={togglePopup}>заказать обратный звонок</button>
                 </div>
                 <div className={`hamburger ${isMenuOpen ? 'hamburger-active' : ''}`} onClick={toggleMenu}>
                     <span></span>
@@ -40,6 +46,7 @@ const Header = () => {
                     <span></span>
                 </div>
             </div>
+            {isPopupOpen && <Popup onClose={togglePopup} />}
         </header>
     );
 };
