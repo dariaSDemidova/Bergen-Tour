@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+import arrowLeft from '../../assets/icons/arrow-left.svg';
+import arrowRight from '../../assets/icons/arrow-right.svg';
 import './ServiceSlider.scss';
 
-const ServiceSlider = ({ images, arrowLeft, arrowRight }) => {
+const ServiceSlider = ({ images}) => {
   const [position, setPosition] = useState(1);
 
   const slidesToScroll = 1;
@@ -55,9 +57,7 @@ const ServiceSlider = ({ images, arrowLeft, arrowRight }) => {
 };
 
 ServiceSlider.propTypes = {
-  images: PropTypes.arrayOf(PropTypes.string).isRequired,
-  arrowLeft: PropTypes.string.isRequired,
-  arrowRight: PropTypes.string.isRequired,
+  images: PropTypes.arrayOf(PropTypes.string).isRequired
 };
 
 export default ServiceSlider;

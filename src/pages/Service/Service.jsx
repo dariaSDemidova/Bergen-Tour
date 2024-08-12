@@ -1,5 +1,3 @@
-import arrowLeft from '../../assets/icons/arrow-left.svg';
-import arrowRight from '../../assets/icons/arrow-right.svg';
 import pic1 from '../../assets/images/service-slider/pic1.jpeg';
 import pic2 from '../../assets/images/service-slider/pic2.jpeg';
 import pic3 from '../../assets/images/service-slider/pic3.jpeg';
@@ -32,7 +30,7 @@ const Service = () => {
                 <li>Комплексная организация деловых визитов и отдыха во всех странах мира</li>
               </ul>
             </div>
-            <ServiceSlider images={images} arrowLeft={arrowLeft} arrowRight={arrowRight}/>
+            <ServiceSlider images={images}/>
           </div>
         </div>
       </section>
