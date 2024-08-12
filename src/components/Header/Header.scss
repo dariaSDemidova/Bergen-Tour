@@ -102,7 +102,11 @@
 .menu {
     display: flex;
     list-style: none;
-    gap: 70px;
+    gap: 50px;
+
+    @media screen and (max-width: 1024px) {
+        gap: 30px;
+    }
 
     @media screen and (max-width: 768px) {
         display: none;
