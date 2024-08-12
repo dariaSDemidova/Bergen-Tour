@@ -5,7 +5,7 @@
 .container {
     padding: 100px 250px;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1440px) {
         padding: 100px 200px;
     }
 
@@ -48,6 +48,48 @@
         &:hover {
             .button-image {
                 content: url('../../assets/icons/blue-plane.svg');
+            }
+        }
+    }
+}
+
+
+.offerings {
+    background-color: #A7D1EF;
+
+    &__title {
+        @include text-styles(38px, 700, $orange-color);
+    }
+
+    &__subtitle {
+        @include text-styles(38px, 700, $orange-color);
+        font-style: italic;
+    }
+
+
+    &__list {
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        
+        @media screen and (max-width: 768px) {
+            grid-template-columns: 1fr;
+            gap: 0;
+        }
+
+        &-item {
+            @include text-styles(20px, 400, $black-color);
+            text-transform: uppercase;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+
+            img {
+                height: 32px;
+                width: 32px;
             }
         }
     }
