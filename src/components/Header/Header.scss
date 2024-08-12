@@ -81,6 +81,13 @@
             transition: all 0.3s ease;
         }
 
+        &.hamburger-active {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 3;
+        }
+
         &.hamburger-active span:nth-child(1) {
             transform: rotate(45deg);
             position: absolute;
