@@ -1,0 +1,84 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.service-slider {
+    max-width: 500px;
+    overflow: hidden;
+
+    @media screen and (min-width: 2560px) {
+      max-width: 700px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      max-width: 350px;
+    }
+
+    @media screen and (max-width: 425px) {
+      max-width: 300px;
+    }
+
+    &__container {
+      overflow: hidden;
+    }
+    &__items {
+      display: flex;
+      transition: all 0.5s ease;
+    }
+    &__item {
+      flex: 0 0 100%;
+      max-height: 500px;
+      max-width: 500px;
+      background-color: transparent;
+
+      @media screen and (min-width: 2560px) {
+        max-height: 700px;
+        max-width: 700px;
+      }
+
+      @media screen and (max-width: 1024px) {
+        max-height: 350px;
+        max-width: 350px;
+      }
+
+      @media screen and (max-width: 425px) {
+        max-height: 300px;
+        max-width: 300px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        background-color: transparent;
+      }
+    }
+    &__btns {
+      display: flex;
+      justify-content: center;
+      gap: 26px;
+      margin-top: 27px;
+    }
+    &__btn {
+      background-color: #fff;
+      border: none;
+      width: 60px;
+      height: 60px;
+      border-radius: 50px;
+
+      @media screen and (max-width: 1024px) {
+        width: 50px;
+        height: 50px;
+      }
+
+      img {
+        padding-top: 5px;
+      }
+      &:hover {
+        background-color: $blue-color;
+        cursor: pointer;
+        img {
+          filter: brightness(0) saturate(100%) invert(100%);
+        }
+      }
+    }
+}
