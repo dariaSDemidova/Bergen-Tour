@@ -1,0 +1,15 @@
+.tours {
+  &__wrapper {
+    margin-top: 50px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    @media screen and (max-width: 1440px) {
+      display: flex;
+      overflow-x: scroll;
+      gap: 40px;
+    }
+  }
+}
