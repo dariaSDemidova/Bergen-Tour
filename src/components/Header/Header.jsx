@@ -24,7 +24,8 @@ const Header = () => {
                     <Link to="/"><img src={logo} alt="logo" className="header__logo" /></Link>
                     <nav className={`nav ${isMenuOpen ? 'nav-active' : ''}`}>
                         <ul className={`menu ${isMenuOpen ? 'menu-active' : ''}`}>
-                            <li className="menu__item"><Link to="/" className="menu__link" onClick={toggleMenu}>Подбор тура</Link></li>
+                            <li className="menu__item"><Link to="/" className="menu__link" onClick={toggleMenu}>Главная</Link></li>
+                            <li className="menu__item"><Link to="/search" className="menu__link" onClick={toggleMenu}>Подбор тура</Link></li>
                             <li className="menu__item"><Link to="/about" className="menu__link" onClick={toggleMenu}>О нас</Link></li>
                             <li className="menu__item"><Link to="/service" className="menu__link" onClick={toggleMenu}>Корпоративное обслуживание</Link></li>
                             <li className="menu__item"><Link to="/certificates" className="menu__link" onClick={toggleMenu}>Подарочные сертификаты</Link></li>

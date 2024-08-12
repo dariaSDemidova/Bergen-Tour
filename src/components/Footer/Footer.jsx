@@ -19,7 +19,8 @@ const Footer = () => {
                 </div>
                 <nav className="footer__nav">
                     <ul className="footer__menu">
-                        <li className="footer__menu-item"><Link to="/" className="footer__menu-link">Подбор тура</Link></li>
+                        <li className="footer__menu-item"><Link to="/" className="footer__menu-link">Главная</Link></li>
+                        <li className="footer__menu-item"><Link to="/search" className="footer__menu-link">Подбор тура</Link></li>
                         <li className="footer__menu-item"><Link to="/about" className="footer__menu-link">О нас</Link></li>
                         <li className="footer__menu-item"><Link to="/service" className="footer__menu-link">Корпоративное обслуживание</Link></li>
                         <li className="footer__menu-item"><Link to="/certificates" className="footer__menu-link">Подарочные сертификаты</Link></li>

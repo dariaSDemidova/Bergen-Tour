@@ -1,0 +1,54 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+
+.container {
+    padding: 100px 250px;
+
+    @media screen and (max-width: 1024px) {
+        padding: 100px 200px;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 100px 100px;
+    }
+
+    @media screen and (max-width: 425px) {
+        padding: 100px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.search {
+    background-color: #A7D1EF;
+
+    &__title {
+        @include text-styles(38px, 700, $black-color);
+
+        span {
+            color: $orange-color;
+            font-style: italic;
+        }
+    }
+
+    &__button {
+        @include button;
+        margin-top: 70px;
+        text-transform: uppercase;
+        width: 80%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        text-decoration: none;
+
+        &:hover {
+            .button-image {
+                content: url('../../assets/icons/blue-plane.svg');
+            }
+        }
+    }
+}
