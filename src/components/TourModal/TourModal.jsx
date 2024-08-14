@@ -1,12 +1,32 @@
+import { useEffect } from 'react';
 import TourModalOption from '../TourModalOption/TourModalOption';
+
 import './TourModal.scss';
 
-const TourModal = ({ tourInfo, options, onClose }) => {
+const TourModal = ({ isOpen, tourInfo, options, onClose }) => {
   if (!tourInfo) return null;
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isOpen]);
+
+  if (!isOpen) return null;
 
   return (
     <div className="tours-modal" id="toursModal" onClick={onClose}>
       <div className="tours-modal__body" id="toursModalBody" onClick={e => e.stopPropagation()}>
+        <button className="tours-modal__close" onClick={onClose} aria-label="Закрыть">
+          <span></span>
+          <span></span>
+        </button>
         <ul className="tours-modal__date-list">
           {tourInfo.date_main.map((date, index) => (
             <li key={index} className="tours-modal__date-list-item">{date}</li>

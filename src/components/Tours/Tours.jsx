@@ -7,6 +7,7 @@ import './Tours.scss';
 const Tours = () => {
   const [tours, setTours] = useState([]);
   const [selectedTour, setSelectedTour] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     fetch('index-tours.json')
@@ -17,9 +18,11 @@ const Tours = () => {
 
   const handleSelectTour = (tour) => {
     setSelectedTour(tour);
+    setIsModalOpen(true);
   };
 
   const handleCloseModal = () => {
+    setIsModalOpen(false);
     setSelectedTour(null);
   };
 
@@ -27,11 +30,12 @@ const Tours = () => {
     <>
       <div className="tours__wrapper">
         {tours.map(tour => (
-          <TourCard key={tour.id} tour={tour} onSelect={handleSelectTour} />
+          <TourCard key={tour.id} tour={tour} onSelect={() => handleSelectTour(tour)} />
         ))}
       </div>
       {selectedTour && (
         <TourModal
+          isOpen={isModalOpen}
           tourInfo={selectedTour}
           options={selectedTour.options}
           onClose={handleCloseModal}
