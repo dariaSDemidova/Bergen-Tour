@@ -94,3 +94,16 @@
         }
     }
 }
+
+.tours {
+    &__header {
+      @include text-styles(38px, 700, $black-color);
+      &-orange {
+      color: $orange-color;
+      }
+    }
+    &__subheader {
+      @include text-styles(30px, 400, $black-color);
+      margin-top: 20px;  
+    }
+}  

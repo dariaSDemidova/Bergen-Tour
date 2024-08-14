@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import Tours from '../../components/Tours/Tours';
 import travel from '../../assets/icons/travel-explore.svg';
 import accessibility from '../../assets/icons/accessibility.svg';
 import person from '../../assets/icons/person-add.svg';
@@ -44,6 +45,13 @@ const Main = () => {
                     </ul>
                 </div>
             </section>
+			<section className="tours">
+				<div className="container">
+					<h2 className="tours__header"><span className="tours__header-orange">Готовые турпакеты и отдельные услуги</span><br/>по честным ценам</h2>
+					<h3 className="tours__subheader">Если найдете дешевле, то свяжитесь с нами</h3>
+					<Tours/>
+				</div>
+    		</section>
         </>
     );
 };

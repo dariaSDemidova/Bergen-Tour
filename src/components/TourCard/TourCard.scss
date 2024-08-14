@@ -1,0 +1,97 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.tours {
+  &__item {
+    position: relative;
+    max-width: 406px;
+    max-height: 639px;
+    border-radius: 40px;
+    box-shadow: 8px 8px 10px rgba(#619EDB, 0.6);
+    padding: 16px;
+    cursor: pointer;
+
+    &-label {
+      position: absolute;
+      background-color: $orange-color;
+      border-top-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      width: 132px;
+      height: 74px;
+      text-align: center;
+      @include text-styles(20px, 700, $white-color);
+      text-transform: uppercase;
+      padding: 25px 0;
+      top: 12px;
+      left: 10px;
+
+      @media screen and (max-width: 425px) {
+        width: 100px;
+        height: 54px;
+        padding: 16px 0;
+        top: 6px;
+        left: 6px;
+        font-size: 15px;
+      }
+    }
+    &-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 40px;
+      margin: 0 auto;
+
+    }
+    &-title {
+      @include text-styles(20px, 700, $black-color);
+      margin-top: 22px;
+      margin-left: 4px;
+      text-transform: uppercase;
+
+      @media screen and (max-width: 375px) {
+        font-size: 16px;
+        margin-top: 10px;
+      }
+    }
+    &-place {
+      position: relative;
+      @include text-styles(20px, 700, $black-color);
+      margin-top: 9px;
+      padding-left: 34px;
+
+      @media screen and (max-width: 375px) {
+        font-size: 16px;
+        margin-top: 5px;
+      }
+      &:before {
+        position: absolute;
+        content: url("../../assets/icons/airplane-search.svg");
+        display: block;
+        left: 4px;
+        width: 23px;
+        height: 24px;
+      }
+    }
+    &-date {
+      list-style: none;
+      @include text-styles(20px, 700, $orange-color);
+      & li {
+        position: relative;
+        margin-top: 9px;
+        padding-left: 34px;
+        &:before {
+          position: absolute;
+          content: url("../../assets/icons/calendar-clock.svg");
+          display: block;
+          left: 2px;
+          width: 23px;
+          height: 24px;
+        }
+      }
+
+      @media screen and (max-width: 375px) {
+        font-size: 16px;
+        margin-top: 5px;
+      }
+    }
+  }
+}
