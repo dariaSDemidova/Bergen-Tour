@@ -1,0 +1,42 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.tours-modal__options {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  @include text-styles(20px, 700, $black-color);
+  &-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+  &-title {
+    text-transform: uppercase;
+  }
+  &-price {
+    & .options-price__title {
+      color: $orange-color;
+    }
+    & .options-price__value {
+      font-weight: 400;
+    }
+  }
+  &-info {
+    font-size: 15px;
+    text-transform: lowercase;
+  }
+  &-flight {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    color: $blue-color;
+    gap: 5px;
+    &:before {
+      display: inline-block;
+      content: url("../../assets/icons/airplane.svg");
+      width: 25px;
+      height: 25px;
+    }
+  }
+}

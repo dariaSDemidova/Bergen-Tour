@@ -72,22 +72,25 @@
       }
     }
     &-date {
-      position: relative;
+      list-style: none;
       @include text-styles(20px, 700, $orange-color);
-      margin-top: 9px;
-      padding-left: 34px;
+      & li {
+        position: relative;
+        margin-top: 9px;
+        padding-left: 34px;
+        &:before {
+          position: absolute;
+          content: url("../../assets/icons/calendar-clock.svg");
+          display: block;
+          left: 2px;
+          width: 23px;
+          height: 24px;
+        }
+      }
 
       @media screen and (max-width: 375px) {
         font-size: 16px;
         margin-top: 5px;
-      }
-      &:before {
-        position: absolute;
-        content: url("../../assets/icons/calendar-clock.svg");
-        display: block;
-        left: 2px;
-        width: 23px;
-        height: 24px;
       }
     }
   }

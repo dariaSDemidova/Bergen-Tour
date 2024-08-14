@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import TourCard from '../TourCard/TourCard';
+import TourModal from '../TourModal/TourModal';
+
 import './Tours.scss';
-// import TourModal from './TourModal';
 
 const Tours = () => {
   const [tours, setTours] = useState([]);
@@ -24,12 +25,18 @@ const Tours = () => {
 
   return (
     <>
-    <div className="tours__wrapper">
-      {tours.map(tour => (
-        <TourCard key={tour.id} tour={tour} onSelect={handleSelectTour} />
-      ))}
-    </div>
-    {selectedTour && <TourModal tourInfo={selectedTour} onClose={handleCloseModal} />}
+      <div className="tours__wrapper">
+        {tours.map(tour => (
+          <TourCard key={tour.id} tour={tour} onSelect={handleSelectTour} />
+        ))}
+      </div>
+      {selectedTour && (
+        <TourModal
+          tourInfo={selectedTour}
+          options={selectedTour.options}
+          onClose={handleCloseModal}
+        />
+      )}
     </>
   );
 }
