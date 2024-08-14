@@ -11,7 +11,6 @@ const TourCard = ({ tour, onSelect }) => {
       <p className="tours__item-date">
         {tour.date.map((dateStr, index) => (
           <React.Fragment key={index}>
-           
             {dateStr && <p>{dateStr}</p>}
           </React.Fragment>
         ))}

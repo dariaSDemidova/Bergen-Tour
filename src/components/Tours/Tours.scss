@@ -7,9 +7,15 @@
     gap: 20px;
 
     @media screen and (max-width: 1440px) {
-      display: flex;
-      overflow-x: scroll;
-      gap: 40px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
     }
   }
 }
