@@ -91,7 +91,7 @@
       padding-left: 55px;
       li {
         position: relative;
-        @include text-styles(24px, 300, $black-color);
+        @include text-styles(24px, 400, $black-color);
         margin-bottom: 20px;
 
         @media screen and (min-width: 2560px) {
