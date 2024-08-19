@@ -11,7 +11,7 @@ const TourModalOption = ({ option }) => {
       </div>
       {option.prepayment && (<div className="tours-modal__options-price">
         <span className="options-price__title">Предоплата: </span>
-        <span className="options-price__value">{option.prepayment} ₸</span>
+        <span className="options-price__value">{option.prepayment} {option.prepayment_cur}</span>
       </div>)}
       {option.info && <div className="tours-modal__options-info">{option.info}</div>}
       {option.date && option.date.map((date, index) => (

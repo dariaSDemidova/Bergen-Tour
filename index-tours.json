@@ -37,6 +37,7 @@
           "price": "2 175 000",
           "price_cur": "₸",
           "prepayment": "500 000",
+          "prepayment_cur": "₸",
           "info": "остаток после получения визы",
           "flight": "Вылет из Алматы"
         }
@@ -75,6 +76,7 @@
           "price": "1 450 000",
           "price_cur": "₸",
           "prepayment": "350 000",
+          "prepayment_cur": "₸",
           "info": "остаток после получения визы",
           "flight": "Вылет из Алматы"
         }
@@ -112,6 +114,7 @@
           "price": "1 890 000",
           "price_cur": "₸",
           "prepayment": "",
+          "prepayment_cur": "₸",
           "info": "",
           "flight": "Вылет из Алматы"
         },
@@ -121,6 +124,7 @@
           "price": "1 750 000",
           "price_cur": "₸",
           "prepayment": "",
+          "prepayment_cur": "₸",
           "info": "",
           "flight": "Вылет из Алматы"
         },
@@ -130,6 +134,7 @@
           "price": "1 640 000",
           "price_cur": "₸",
           "prepayment": "",
+          "prepayment_cur": "₸",
           "info": "",
           "flight": "Вылет из Алматы"
         },
@@ -139,6 +144,7 @@
           "price": "1 840 000",
           "price_cur": "₸",
           "prepayment": "",
+          "prepayment_cur": "₸",
           "info": "",
           "flight": "Вылет из Алматы"
         }
@@ -179,6 +185,7 @@
           "price": "2 325 000",
           "price_cur": "₸",
           "prepayment": "",
+          "prepayment_cur": "₸",
           "info": "",
           "flight": "Вылет из Алматы"
         },
@@ -188,6 +195,7 @@
           "price": "1 550 000 ",
           "price_cur": "₸",
           "prepayment": "",
+          "prepayment_cur": "₸",
           "info": "",
           "flight": "Вылет из Алматы"
         },
@@ -197,6 +205,7 @@
           "price": "2 650 000",
           "price_cur": "₸",
           "prepayment": "",
+          "prepayment_cur": "₸",
           "info": "",
           "flight": "Вылет из Алматы"
         },
@@ -206,6 +215,7 @@
           "price": "2 650 000",
           "price_cur": "₸",
           "prepayment": "500 000",
+          "prepayment_cur": "₸",
           "info": "остаток после получения визы",
           "flight": "Вылет из Алматы"
         }
@@ -243,6 +253,7 @@
           "price": "740 000",
           "price_cur": "₸",
           "prepayment": "300 000",
+          "prepayment_cur": "₸",
           "info": "",
           "flight": "Вылет из Алматы, Астаны"
         }
@@ -282,6 +293,7 @@
           "price": "1 290 000",
           "price_cur": "₸",
           "prepayment": "600 000",
+          "prepayment_cur": "₸",
           "info": "остаток после получения визы",
           "flight": "Вылет из Алматы"
         },
@@ -291,6 +303,7 @@
           "price": "1 690 000",
           "price_cur": "₸",
           "prepayment": "400 000",
+          "prepayment_cur": "₸",
           "info": "первые 3 места со скидкой 1 590 000 тг",
           "flight": "Вылет из Алматы"
         }
@@ -330,6 +343,7 @@
           "price": "1 650 000",
           "price_cur": "₸",
           "prepayment": "400 000",
+          "prepayment_cur": "₸",
           "info": "остаток после получения визы",
           "flight": "Вылет из Алматы"
         }
@@ -369,6 +383,7 @@
           "price": "2 800 000",
           "price_cur": "₸",
           "prepayment": "800 000",
+          "prepayment_cur": "₸",
           "info": "остаток после получения визы",
           "flight": "Вылет из Алматы"
         },
@@ -378,6 +393,7 @@
           "price": "2 900 000",
           "price_cur": "₸",
           "prepayment": "800 000",
+          "prepayment_cur": "₸",
           "info": "остаток после получения визы",
           "flight": "Вылет из Алматы"
         },
@@ -387,6 +403,7 @@
           "price": "3 900 000",
           "price_cur": "₸",
           "prepayment": "800 000",
+          "prepayment_cur": "₸",
           "info": "остаток после получения визы",
           "flight": "Вылет из Алматы"
         }
@@ -427,6 +444,7 @@
           "price": "1 550 000",
           "price_cur": "₸",
           "prepayment": "400 000",
+          "prepayment_cur": "₸",
           "info": "остаток после получения визы",
           "flight": "Вылет из Астаны"
         }
@@ -468,6 +486,7 @@
           "price": "2 750 000",
           "price_cur": "₸",
           "prepayment": "800 000",
+          "prepayment_cur": "₸",
           "info": "",
           "flight": "Вылет из Алматы, Астаны"
         }
@@ -506,6 +525,7 @@
           "price": "1 620 000",
           "price_cur": "₸",
           "prepayment": "",
+          "prepayment_cur": "₸",
           "info": "Первые 3 места по  1450 000 ТГ",
           "flight": "Вылет из Астаны"
         }
@@ -555,6 +575,7 @@
           "price": "1 755 000",
           "price_cur": "₸",
           "prepayment": "500 000",
+          "prepayment_cur": "₸",
           "info": "остаток после получения визы",
           "flight": "Вылет из Алматы"
         },
@@ -564,6 +585,7 @@
           "price": "3 950",
           "price_cur": "$",
           "prepayment": "500 000",
+          "prepayment_cur": "₸",
           "info": "остаток после получения визы",
           "flight": "Вылет из Ташкента"
         }
@@ -602,6 +624,7 @@
           "price": "2 800 000",
           "price_cur": "₸",
           "prepayment": "600 000",
+          "prepayment_cur": "₸",
           "info": "остаток после получения визы",
           "flight": "Вылет из Алматы"
         },
@@ -611,6 +634,7 @@
           "price": "2 950 000",
           "price_cur": "₸",
           "prepayment": "600 000",
+          "prepayment_cur": "₸",
           "info": "остаток после получения визы",
           "flight": "Вылет из Алматы"
         }
@@ -648,6 +672,7 @@
           "price": "2 700 000",
           "price_cur": "₸",
           "prepayment": "1 000 000",
+          "prepayment_cur": "₸",
           "info": "остаток после получения визы",
           "flight": "Вылет из Алматы, Астаны"
         }
@@ -686,6 +711,7 @@
           "price": "1 990 000",
           "price_cur": "₸",
           "prepayment": "500 000",
+          "prepayment_cur": "₸",
           "info": "остаток после получения визы",
           "flight": "Вылет из Алматы"
         },
@@ -695,6 +721,7 @@
           "price": "1 290 000",
           "price_cur": "₸",
           "prepayment": "500 000",
+          "prepayment_cur": "₸",
           "info": "остаток после получения визы",
           "flight": "Вылет из Алматы"
         }
@@ -735,6 +762,7 @@
           "price": "1 990 000",
           "price_cur": "₸",
           "prepayment": "500 000",
+          "prepayment_cur": "₸",
           "info": "остаток после получения визы",
           "flight": "Вылет из Алматы"
         }
