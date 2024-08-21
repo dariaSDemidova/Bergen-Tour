@@ -23,6 +23,27 @@ const Main = () => {
                 </div>
             </section>
 
+ <section class="containerServices">
+      <div class="why-header">
+        <h2 class="textLato800">Почему мы?</h2>
+        <div class="why-contacts">
+          <p class="textLato900">+7 778 900 67 21</p>
+          <button id="why-contacts__button" className="contacts__button why-contacts-btn">заказать обратный звонок</button>
+        </div>
+      </div>
+      
+      <div class="whyussection">
+        <ul class="why-list">
+          <li><img src={plane} alt="plane"/>Наш сервис порадует даже самых искушенных путешественников!</li>
+          <li><img src={plane} alt="plane"/>У нас самые приемлемые цены!</li>
+          <li><img src={plane} alt="plane"/>Наши партнеры заслуживают доверия</li>
+          <li><img src={plane} alt="plane"/>Мы честны перед государственными органами</li>
+          <li><img src={plane} alt="plane"/>Путешествовать с нами безопасно!</li>
+          <li><img src={plane} alt="plane"/>Все оформляем онлайн. Не нужно никуда ехать!</li>
+          <li><img src={plane} alt="plane"/>Большая сеть партнеров</li>
+        </ul>
+      </div>
+    </section>
             <section className="offerings">
                 <div className="container">
                     <h1 className="offerings__title">Туристическое агентство «BERGEN TOUR»</h1>

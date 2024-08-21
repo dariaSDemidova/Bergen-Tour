@@ -1,0 +1,46 @@
+
+@import '../../styles/mixins';
+
+.cert {
+    background: url('..//..//assets/images/backgroundCertificates.png') center center/cover no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 200px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    &-text {
+        @include text-styles(32px, 400, $black-color);
+        &-orange {
+            color: $orange-color;
+        }
+    }
+}
+
+.certificates {
+    @include text-styles(40px, 700, $orange-color);
+}
+
+.number {
+    max-width: 70px;
+    max-height: 70px;
+}
+
+.box2 {
+    margin-left: 70px;
+}
+
+.box3 {
+    margin-left: 130px;
+}

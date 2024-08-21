@@ -107,3 +107,61 @@
       margin-top: 20px;  
     }
 }  
+.containerServices {
+    background: url('..//..//assets/images/bg3.jpg') center center/cover no-repeat;
+    background-color: rgb(143, 202, 241);
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 1000px;
+    padding: 60px 200px;
+  }
+  
+.why {
+    &-header {
+    display: flex;
+    justify-content: space-between;
+    }
+    &-contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      &-btn {
+        background-color: transparent;
+        color: $orange-color;
+      }
+    }
+    &-list {
+      list-style: none;
+      margin-top: 30px;
+    
+      li {
+        position: relative;
+        @include text-styles(20px, 400, $black-color);
+        margin-bottom: 30px;
+    
+        &:before {
+          position: absolute;
+          content: url("../../assets/icons/airplane.png");
+          left: -40px;
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
+  
+.whyussection {
+    margin-left: 60%;
+  }
+  .textLato900 {
+    @include text-styles(36px, 700, $orange-color);
+  }
+  
+  .textLato800 {
+    @include text-styles(48px, 700, $orange-color);
+  }
+  
