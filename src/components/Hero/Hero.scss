@@ -1,0 +1,27 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.hero {
+    background: url('../../assets/images/bg1.jpg') center center/cover no-repeat;
+    min-height: 986px;
+    position: relative;
+    display: flex;
+
+    &__title {
+        @include text-styles(64px, 700, $black-color);
+        font-style: italic;
+        display: inline-block;
+        width: 40%;
+
+        span {
+            color: $orange-color;
+        }
+    }
+
+    &__shedule {
+        @include text-styles(72px, 300, $white-color);
+        position: absolute;
+        top: 10px;
+        right: 50px;
+    }
+}
