@@ -165,3 +165,52 @@
     @include text-styles(48px, 700, $orange-color);
   }
   
+  
+.servicescolor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: cover;
+  min-height: 50px;
+  justify-content: space-around;
+  width: 100%;
+  
+}
+.reviewColumn {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+}
+.backgroundcolor {
+  background-color: white;
+}
+.reviewsectionheader {
+  align-items: flex-end;
+  min-height: 150px;
+  border: white;
+  justify-content: center;
+}
+.reviewsservices {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: cover;
+  min-height: 150px;
+  justify-content: space-around;
+  width: 100%;
+  height: 300px;
+  align-items: center;
+  padding: 20px;
+  column-gap: 190px;
+  margin-top: 50px;
+}
+.reviewSlider
+{
+  position: relative;
+margin: 300 0 0 0;
+
+}

@@ -11,6 +11,9 @@ import sailing from '../../assets/icons/sailing.svg';
 import hotel from '../../assets/icons/hotel.svg';
 import plane from '../../assets/icons/plane.svg';
 import whitePlane from '../../assets/icons/white-plane.svg';
+import Reviews from '../../components/Reviews/Reviews';
+import certificate from '../../assets/images/certificate.png';
+
 import './Main.scss';
 
 const Main = () => {
@@ -23,17 +26,17 @@ const Main = () => {
                 </div>
             </section>
 
- <section class="containerServices">
-      <div class="why-header">
-        <h2 class="textLato800">Почему мы?</h2>
-        <div class="why-contacts">
-          <p class="textLato900">+7 778 900 67 21</p>
+ <section className="containerServices">
+      <div className="why-header">
+        <h2 className="textLato800">Почему мы?</h2>
+        <div className="why-contacts">
+          <p className="textLato900">+7 778 900 67 21</p>
           <button id="why-contacts__button" className="contacts__button why-contacts-btn">заказать обратный звонок</button>
         </div>
       </div>
       
-      <div class="whyussection">
-        <ul class="why-list">
+      <div className="whyussection">
+        <ul className="why-list">
           <li><img src={plane} alt="plane"/>Наш сервис порадует даже самых искушенных путешественников!</li>
           <li><img src={plane} alt="plane"/>У нас самые приемлемые цены!</li>
           <li><img src={plane} alt="plane"/>Наши партнеры заслуживают доверия</li>
@@ -66,6 +69,53 @@ const Main = () => {
                     </ul>
                 </div>
             </section>
+            <section className="servicescolor backgroundcolor">
+      <div className="reviewsectionheader">
+        <h2 className="textLato800">Отзывы от наших клиентов</h2>
+                </div>
+      
+        </section>
+        <Reviews />
+ 
+        <section className="servicescolor backgroundimg">
+      <div className="reviewsectionheader">
+        <h2 className="textLato800">Подарочные сертификаты</h2>
+        <div className="reviewscert">
+          <div className="certsection">
+            <div className="reviewColumn">
+              <div className="certbackground" >
+                <div> <input type="text" className="inputorder" value="100000"/> </div>
+                <div> <input type="text" name="clientname" className="inputorder"/></div>
+              </div>
+            </div>
+          </div>
+          <div className="certsection">
+            <div className="reviewRow">
+              <div className="rowsection">
+                <div className="inputsection">
+                  <div>Сумма</div>
+                  <div>Количество</div>
+                </div>
+                <div>
+                  <div className="inputsection">
+                    <div> <input type="text" name="summ" className="inputsumm"/></div>
+                    <div> <input type="text" name="number" className="inputsumm"/> </div>
+                  </div>
+                </div>
+              </div>
+              <div className="cert-discount"><span className="cert-discount-orange">Скидка 3%</span> при покупке от 10 сертификатов</div>
+              <div className="cert-discount"><span className="cert-discount-orange">Скидка 5%</span> при покупке от 20 сертификатов</div>
+              <div>
+                <form action="https://wa.me/77789006721">
+                  <button type="submit" className="buttoncert">Оставить заявку <img src="./assets/img/airplane.png" alt="airplane"/></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      
 			<section className="tours">
 				<div className="container">
 					<h2 className="tours__header"><span className="tours__header-orange">Готовые турпакеты и отдельные услуги</span><br/>по честным ценам</h2>
