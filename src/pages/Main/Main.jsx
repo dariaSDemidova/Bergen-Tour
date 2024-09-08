@@ -96,7 +96,7 @@ const Main = () => {
               <div className='reviewRow'> <div className="reviewsColumn"> 
             <div className="certDiscount"><span className="certDiscount-orange">Скидка 3%</span> при покупке от 10 сертификатов</div>
              <div className="certDiscount">
-              <span className="cerDiscount-Orange">Скидка 5%</span> при покупке от 20 сертификатов</div>
+              <span className="certDiscount-orange">Скидка 5%</span> при покупке от 20 сертификатов</div>
             </div>
          
     
