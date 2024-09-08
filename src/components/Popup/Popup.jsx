@@ -4,6 +4,9 @@ import plane from '../../assets/icons/white-plane.svg';
 import './Popup.scss';
 
 const Popup = ({ onClose }) => {
+    const [name, setName] = useState('');
+    const [nameError, setNameError] = useState('');
+    const [isNameValid, setIsNameValid] = useState(false);
     const [cities, setCities] = useState([]);
     const [selectedCity, setSelectedCity] = useState('');
     const [phone, setPhone] = useState('');
@@ -25,6 +28,26 @@ const Popup = ({ onClose }) => {
             .catch(error => console.error('Ошибка при получении данных о городах:', error));
     }, []);
 
+    const validateName = (name) => {
+        const nameRegex = /^[A-Za-zА-Яа-яЁё\s]+$/;
+        if (name.length < 2) {
+            return 'Имя должно содержать хотя бы 2 символа';
+        }
+        if (!nameRegex.test(name)) {
+            return 'Имя должно содержать только буквы';
+        }
+        return '';
+    };    
+
+    const handleNameChange = (e) => {
+        const newName = e.target.value;
+        setName(newName);
+    
+        const error = validateName(newName);
+        setNameError(error);
+        setIsNameValid(!error);
+    };
+    
     const validatePhoneNumber = (phone) => {
         const phoneRegex = /^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/;
         return phoneRegex.test(phone);
@@ -69,16 +92,38 @@ const Popup = ({ onClose }) => {
     };
 
     const isFormValid = () => {
-        return selectedCity && isPhoneValid && time;
+        return isNameValid && selectedCity && isPhoneValid && time;
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (isFormValid()) {
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxojlCpbnvcPBsln2-qfp0KufZEYLgSrOgvbCHzDTxf_gN1hzqAQ-0DeBPCwvLPzevwlw/exec';
+            const formData = new FormData(e.target);
+            fetch(scriptURL, { method: 'POST', body: formData })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message));
+        } else {
+            console.log('Форма заполнена некорректно');
+        }
     };
 
     return (
         <>
             <div id="overlay" className="overlay" onClick={onClose}></div>
-            <div id="popup" className="popup">
+            <form id="popup" className="popup" name="submit-to-google-sheet" onSubmit={handleSubmit}>
                 <div className="popup__content">
                     <span id="popup__close" className="popup__close" onClick={onClose}>&times;</span>
                     <div className="popup__title">Давайте мы вам перезвоним?</div>
+                    <input
+                        type="text"
+                        className="popup__input"
+                        name="name"
+                        placeholder="Ваше имя"
+                        value={name}
+                        onChange={handleNameChange}
+                    />
+                    <div id="name-error" className="popup__error">{nameError}</div>
                     <select
                         id="cities-select"
                         className="popup__input popup__select"
@@ -86,7 +131,7 @@ const Popup = ({ onClose }) => {
                         value={selectedCity}
                         onChange={(e) => setSelectedCity(e.target.value)}
                     >
-                        <option value="">Выберите город</option>
+                        <option value="" disabled hidden>Выберите город</option>
                         {cities.map(city => (
                             <option key={city} value={city}>{city}</option>
                         ))}
@@ -95,6 +140,7 @@ const Popup = ({ onClose }) => {
                         id="phone"
                         type="tel"
                         className="popup__input"
+                        name="phone"
                         placeholder="+7 (999) 999-99-99"
                         value={phone}
                         onChange={handlePhoneChange}
@@ -106,28 +152,26 @@ const Popup = ({ onClose }) => {
                         value={time}
                         onChange={(e) => setTime(e.target.value)}
                     >
-                        <option value="">Выберите время</option>
-                        <option value="12">Перезвонить в 12:00</option>
-                        <option value="14">Перезвонить в 14:00</option>
-                        <option value="16">Перезвонить в 16:00</option>
-                        <option value="18">Перезвонить в 18:00</option>
+                        <option value="" disabled hidden>Выберите время</option>
+                        <option value="11-12">Перезвонить с 11:00 до 12:00</option>
+                        <option value="12-13">Перезвонить с 12:00 до 13:00</option>
+                        <option value="13-14">Перезвонить с 13:00 до 14:00</option>
+                        <option value="14-15">Перезвонить с 14:00 до 15:00</option>
+                        <option value="15-16">Перезвонить с 15:00 до 16:00</option>
+                        <option value="16-17">Перезвонить с 16:00 до 17:00</option>
+                        <option value="17-18">Перезвонить с 17:00 до 18:00</option>
                     </select>
-                    <a
-                        href={isFormValid() ? "https://wa.me/77789006721" : "#"}
+                    <button
+                        type="submit"
                         id="submit-button"
                         className={`popup__button ${!isFormValid() ? 'disabled' : ''}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
                         disabled={!isFormValid()}
-                        onClick={(e) => {
-                            if (!isFormValid()) e.preventDefault();
-                        }}
                     >
                         Жду звонка! <img className="button-image" src={plane} alt="plane" />
-                    </a>
+                    </button>
                     <div className="popup__text">Мы перезвоним в удобное Вам время</div>
                 </div>
-            </div>
+            </form>
         </>
     );
 };
@@ -137,5 +181,3 @@ Popup.propTypes = {
 };
 
 export default Popup;
-
-

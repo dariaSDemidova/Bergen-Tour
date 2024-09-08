@@ -15,7 +15,7 @@ const About = () => {
         <main>
             <section className="about">
                 <div className="about__container">
-                    <h1 className="about__title">Туристическое агентство «BERGEN TOUR»</h1>
+                    <h1 className="about__title">Туристическое агентство<br/>«BERGEN TOUR»</h1>
                     <h2 className="about__subtitle">оказывает следующие виды услуг:</h2>
                     <ul className="about__list">
                         <li className="about__list-item"><img src={travel} alt="travel-explore"/>продажа турпакетов</li>
