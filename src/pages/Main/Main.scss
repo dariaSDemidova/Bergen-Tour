@@ -108,7 +108,7 @@
     }
 }  
 .containerServices {
-    background: url('..//..//assets/images/bg3.jpg') center center/cover no-repeat;
+    background: url('../../assets/images/bg3.jpg') center center/cover no-repeat;
     background-color: rgb(143, 202, 241);
     display: flex;
     flex-direction: column;
@@ -166,7 +166,7 @@
   }
   
   
-.servicescolor {
+.servicesColor {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -183,16 +183,71 @@
   flex-direction: row;
   column-gap: 15px;
 }
-.backgroundcolor {
-  background-color: white;
+.backgroundColor {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: cover;
+  min-height: 50px;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-.reviewsectionheader {
+.reviewRow {
+  display: flex;
+  flex-direction: column;
+}
+.backgroundImg {
+  background-image: url('../../assets/images/beach.jpeg') ;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  padding: 60px 200px;
+  align-items: center;
+}
+
+.certImage{
+  width: 450px;
+}
+.reviewsectionHeader {
   align-items: flex-end;
   min-height: 150px;
   border: white;
   justify-content: center;
 }
-.reviewsservices {
+.reviewsCert {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: cover;
+  min-height: 150px;
+  justify-content: space-around;
+  width: 100%;
+  height: 300px;
+  align-items: flex-start;
+  padding: 50px;
+  column-gap: 30px;
+}
+.certSection {
+  align-items: center;
+  width: 360px;
+  height: 360px;
+  border-radius: 15px;
+  height: 150px;
+  padding-bottom: 40px;
+  margin-bottom: 10px;
+}
+
+.reviewsServices {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -213,4 +268,18 @@
   position: relative;
 margin: 300 0 0 0;
 
+}
+.popupButton
+{
+  @include text-styles(20px, 400, $black-color);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.certDiscount {
+  @include text-styles(20px, 400, $black-color);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  &-orange {
+    color: $orange-color;
+  }
 }

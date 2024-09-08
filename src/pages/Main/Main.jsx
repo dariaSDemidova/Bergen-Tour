@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import Tours from '../../components/Tours/Tours';
 import travel from '../../assets/icons/travel-explore.svg';
 import accessibility from '../../assets/icons/accessibility.svg';
@@ -12,12 +13,21 @@ import hotel from '../../assets/icons/hotel.svg';
 import plane from '../../assets/icons/plane.svg';
 import whitePlane from '../../assets/icons/white-plane.svg';
 import Reviews from '../../components/Reviews/Reviews';
-import certificate from '../../assets/images/certificate.png';
+import Certificate from '../../assets/images/certificate.png';
+import Popup from '../../components/Popup/Popup';
 
 import './Main.scss';
 
 const Main = () => {
-    return (
+ 
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+
+  const togglePopup = () => {
+    setIsPopupOpen(!isPopupOpen);
+};
+
+  return (
         <>
             <section className="search">
                 <div className="container">
@@ -69,51 +79,34 @@ const Main = () => {
                     </ul>
                 </div>
             </section>
-            <section className="servicescolor backgroundcolor">
-      <div className="reviewsectionheader">
+    <section className="backgroundColor">
+      <div >
         <h2 className="textLato800">Отзывы от наших клиентов</h2>
                 </div>
-      
+                <div >    <Reviews /> </div>
         </section>
-        <Reviews />
  
-        <section className="servicescolor backgroundimg">
-      <div className="reviewsectionheader">
+ 
+        <section className="backgroundImg">
+      <div className="reviewsectionHeader">
         <h2 className="textLato800">Подарочные сертификаты</h2>
-        <div className="reviewscert">
-          <div className="certsection">
-            <div className="reviewColumn">
-              <div className="certbackground" >
-                <div> <input type="text" className="inputorder" value="100000"/> </div>
-                <div> <input type="text" name="clientname" className="inputorder"/></div>
-              </div>
+        <div className="reviewsCert">
+           
+            <div><img className='certImage' src={Certificate} alt="certificate"/></div> 
+              <div className='reviewRow'> <div className="reviewsColumn"> 
+            <div className="certDiscount"><span className="certDiscount-orange">Скидка 3%</span> при покупке от 10 сертификатов</div>
+             <div className="certDiscount">
+              <span className="cerDiscount-Orange">Скидка 5%</span> при покупке от 20 сертификатов</div>
             </div>
+         
+    
+       <button  className="popupButton" onClick={togglePopup}>Оставить заявку <img src={plane} alt="airplane"/></button>
+       </div>
+           
+           
           </div>
-          <div className="certsection">
-            <div className="reviewRow">
-              <div className="rowsection">
-                <div className="inputsection">
-                  <div>Сумма</div>
-                  <div>Количество</div>
-                </div>
-                <div>
-                  <div className="inputsection">
-                    <div> <input type="text" name="summ" className="inputsumm"/></div>
-                    <div> <input type="text" name="number" className="inputsumm"/> </div>
-                  </div>
-                </div>
-              </div>
-              <div className="cert-discount"><span className="cert-discount-orange">Скидка 3%</span> при покупке от 10 сертификатов</div>
-              <div className="cert-discount"><span className="cert-discount-orange">Скидка 5%</span> при покупке от 20 сертификатов</div>
-              <div>
-                <form action="https://wa.me/77789006721">
-                  <button type="submit" className="buttoncert">Оставить заявку <img src="./assets/img/airplane.png" alt="airplane"/></button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
+      {isPopupOpen && <Popup onClose={togglePopup} />}
     </section>
       
 			<section className="tours">

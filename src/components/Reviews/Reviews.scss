@@ -1,8 +1,8 @@
-*,*::before, *::after {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: calibri;
+    
 }
 
 body {
@@ -10,31 +10,31 @@ body {
     justify-content: center;
 }
 
-swiper-container {
+.swiper-container {
     width: 800px;
     height: 200px;
     line-height: 200px;
     text-align: center;
 }
 
-swiper-slide {
+.swiper-slide {
     background-color: rgb(4 47 46);
     color: #fff;
     font-size: 25px;
 }
 
-swiper-slide:nth-child(2) {
+.swiper-slide:nth-child(2) {
     background-color: rgb(15 118 110);
 }
 
-swiper-slide:nth-child(3) {
+.swiper-slide:nth-child(3) {
     background-color: rgb(45 212 191);
 }
 
-swiper-slide:nth-child(4) {
+.swiper-slide:nth-child(4) {
     background-color: rgb(153 246 228);
 }
 
-swiper-slide:nth-child(5) {
+.swiper-slide:nth-child(5) {
     background-color: rgb(34 197 94);
 }
