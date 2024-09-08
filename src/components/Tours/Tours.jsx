@@ -19,12 +19,26 @@ const Tours = () => {
   const handleSelectTour = (tour) => {
     setSelectedTour(tour);
     setIsModalOpen(true);
+    window.history.pushState({tour}, '', window.location.href);
   };
 
-  const handleCloseModal = () => {
+  const closeModal = () => {
     setIsModalOpen(false);
     setSelectedTour(null);
   };
+
+  const handleCloseModal = () => {
+    closeModal();
+    window.history.back();
+  };
+
+  useEffect(() => {
+    window.addEventListener('popstate', closeModal);
+
+    return () => {
+      window.removeEventListener('popstate', closeModal);
+    };
+  }, []);
 
   return (
     <>
