@@ -8,8 +8,7 @@ import Service from './pages/Service/Service';
 import Certificates from './pages/Certificates/Certificates';
 import Footer from './components/Footer/Footer';
 import Error from './pages/Error/Error';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+
 const App = () => {
   return (
     <Router>

@@ -5,7 +5,7 @@ import review1 from '../../assets/images/review_1.jpg';
 import review2 from '../../assets/images/review_2.jpg';
 import review3 from '../../assets/images/review_3.jpg';
 
-import './Reviews.css';
+import './Reviews.scss';
 
 
 // Import Swiper styles
