@@ -1,0 +1,41 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.hero {
+    background: url('../../assets/images/bg1.jpg') center center/cover no-repeat;
+    min-height: 986px;
+    position: relative;
+    display: flex;
+
+    @media screen and (max-width: 425px) {
+        align-items: flex-end;
+    }
+
+    &__title {
+        @include text-styles(64px, 700, $black-color);
+        font-style: italic;
+
+            @media screen and (max-width: 768px) {
+                font-size: 42px;
+            }
+
+        span {
+            color: $orange-color;
+        }
+
+        &-container {
+            width: 40%;
+
+            @media screen and (max-width: 425px) {
+                width: 100%;
+            }
+        }
+    }
+
+    &__shedule {
+        @include text-styles(72px, 300, $white-color);
+        position: absolute;
+        top: 10px;
+        right: 50px;
+    }
+}
