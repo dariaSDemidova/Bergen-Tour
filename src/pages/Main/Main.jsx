@@ -1,5 +1,8 @@
 import { Link } from 'react-router-dom';
+
 import { useState } from 'react';
+
+import Hero from '../../components/Hero/Hero';
 import Tours from '../../components/Tours/Tours';
 import travel from '../../assets/icons/travel-explore.svg';
 import accessibility from '../../assets/icons/accessibility.svg';
@@ -28,6 +31,7 @@ const Main = () => {
 
   return (
         <>
+            <Hero/>
             <section className="search">
                 <div className="container">
                     <h2 className="search__title">Платите меньше - <span>путешествуйте больше</span></h2>
@@ -58,7 +62,7 @@ const Main = () => {
     </section>
             <section className="offerings">
                 <div className="container">
-                    <h1 className="offerings__title">Туристическое агентство «BERGEN TOUR»</h1>
+                    <h1 className="offerings__title">Туристическое агентство<br/>«BERGEN TOUR»</h1>
                     <h2 className="offerings__subtitle">оказывает следующие виды услуг:</h2>
                     <ul className="offerings__list">
                         <div className="offerings__left-container">
