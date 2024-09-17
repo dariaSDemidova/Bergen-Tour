@@ -1,0 +1,95 @@
+
+@import '../../styles/mixins';
+
+.cert {
+    background: url('../../assets/images/backgroundCertificates.png') center center/cover no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+      @media screen and (max-width: 768px) {
+        font-size: 10px;
+      } 
+       @media screen and (max-width: 425px) {
+        font-size: 14px;
+      }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 90vw;
+    @media screen and (min-width: 2560px) {
+        font-size: 40px;
+      }
+      @media screen and (max-width: 1024px) {
+        /* стили для планшета в альбомной ориентации */
+        margin-right: 5px;
+        font-size: 40px;
+        align-items: center;
+      }
+       
+      @media screen and (max-width: 425px) {
+        font-size: 14px;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 10px;
+      }
+}
+
+
+.box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    width: 70vw;
+
+    &-text {
+        @include text-styles(32px, 400, $black-color);
+        @media screen and (max-width: 768px) {
+       
+            font-size: 24px;
+             } 
+        @media screen and (max-width: 425px) {
+                   font-size: 12px;
+             } 
+        &-orange {
+            color: $orange-color;
+        }
+      
+    }
+   
+}
+
+.certificates {
+    @include text-styles(40px, 700, $orange-color);
+    @media screen and (max-width: 768px) {
+     margin-left:50px;
+     font-size: 36px;
+      }
+}
+
+.number {
+    max-width: 170px;
+    max-height: 170px;
+    @media screen and (max-width: 768px) {
+        max-width: 70px;
+        max-height: 70px;
+      }
+}
+
+.box2 {
+    margin-left: 70px;
+    @media screen and (max-width: 768px) {
+        margin-left: 0px;
+      }
+}
+
+.box3 {
+    margin-left: 130px;
+    @media screen and (max-width: 768px) {
+        margin-left: 0px;
+      }
+}
