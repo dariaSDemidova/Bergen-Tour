@@ -279,6 +279,7 @@ width: 80px;
   
   .textLato800 {
     @include text-styles(48px, 700, $orange-color);
+    text-align: center;
     @media screen and (min-width: 2560px) {
       font-size: 40px;
     }
@@ -449,6 +450,10 @@ color: aliceblue;
 height:40px;
 margin: 10px;
 
+}
+&:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 }
 .certDiscount {
