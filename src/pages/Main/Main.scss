@@ -109,13 +109,14 @@
 }  
 .containerServices {
     background: url('../../assets/images/bg3.jpg');
-    background-color: rgb(143, 202, 241);
     display: flex;
     flex-direction: column;
     background-repeat: no-repeat;
     background-position: center;
-    background-size:auto;
-    padding: 60px 60px;
+    background-size: cover;
+  
+    min-height: 750px;
+ 
     
     @media screen and (min-width: 1440px) {
       /* стили для больших настольных компьютеров и ноутбуков */
