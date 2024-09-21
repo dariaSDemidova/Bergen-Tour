@@ -50,13 +50,13 @@ const Main = () => {
       
       <div className="whyussection">
         <ul className="why-list">
-          <li>Наш сервис порадует даже самых искушенных путешественников!</li>
-          <li>У нас самые приемлемые цены!</li>
-          <li>Наши партнеры заслуживают доверия</li>
-          <li>Мы честны перед государственными органами</li>
-          <li>Путешествовать с нами безопасно!</li>
-          <li>Все оформляем онлайн. Не нужно никуда ехать!</li>
-          <li>Большая сеть партнеров</li>
+          <li className="whyussection__list-item"><img src={plane} alt="plane"/>Наш сервис порадует даже самых искушенных путешественников!</li>
+          <li className="whyussection__list-item"><img src={plane} alt="plane"/> У нас самые приемлемые цены!</li>
+          <li className="whyussection__list-item"><img src={plane} alt="plane"/> Наши партнеры заслуживают доверия</li>
+          <li className="whyussection__list-item"><img src={plane} alt="plane"/> Мы честны перед государственными органами</li>
+          <li className="whyussection__list-item"><img src={plane} alt="plane"/> Путешествовать с нами безопасно!</li>
+          <li className="whyussection__list-item"><img src={plane} alt="plane"/> Все оформляем онлайн. Не нужно никуда ехать!</li>
+          <li className="whyussection__list-item"><img src={plane} alt="plane"/> Большая сеть партнеров</li>
         </ul>
       </div>
     </section>
