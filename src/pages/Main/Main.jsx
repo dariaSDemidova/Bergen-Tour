@@ -18,6 +18,7 @@ import Reviews from '../../components/Reviews/Reviews';
 import Certificate from '../../assets/images/certificate.png';
 import Popup from '../../components/Popup/Popup';
 import plane from '../../assets/icons/plane.svg';
+
 import './Main.scss';
 
 const Main = () => {
@@ -50,13 +51,13 @@ const Main = () => {
       
       <div className="whyussection">
         <ul className="why-list">
-          <li>Наш сервис порадует даже самых искушенных путешественников!</li>
-          <li>У нас самые приемлемые цены!</li>
-          <li>Наши партнеры заслуживают доверия</li>
-          <li>Мы честны перед государственными органами</li>
-          <li>Путешествовать с нами безопасно!</li>
-          <li>Все оформляем онлайн. Не нужно никуда ехать!</li>
-          <li>Большая сеть партнеров</li>
+          <li className="whyussection__list-item"><img src={plane} alt="plane"/>Наш сервис порадует даже самых искушенных путешественников!</li>
+          <li className="whyussection__list-item"><img src={plane} alt="plane"/> У нас самые приемлемые цены!</li>
+          <li className="whyussection__list-item"><img src={plane} alt="plane"/> Наши партнеры заслуживают доверия</li>
+          <li className="whyussection__list-item"><img src={plane} alt="plane"/> Мы честны перед государственными органами</li>
+          <li className="whyussection__list-item"><img src={plane} alt="plane"/> Путешествовать с нами безопасно!</li>
+          <li className="whyussection__list-item"><img src={plane} alt="plane"/> Все оформляем онлайн. Не нужно никуда ехать!</li>
+          <li className="whyussection__list-item"><img src={plane} alt="plane"/> Большая сеть партнеров</li>
         </ul>
       </div>
     </section>
@@ -83,14 +84,17 @@ const Main = () => {
                 </div>
             </section>
     <section className="backgroundColor">
-      <div >
+    <div className="container">
+      <div className='backgroundColor__section' >
         <h2 className="textLato800">Отзывы от наших клиентов</h2>
                 </div>
                 <div >    <Reviews /> </div>
+                </div>
         </section>
  
  
         <section className="backgroundImg">
+    
       <div className="reviewsectionHeader">
         <h2 className="textLato800">Подарочные сертификаты</h2>
         <div className="reviewsCert">
@@ -103,7 +107,7 @@ const Main = () => {
             </div>
          
     
-       <button  className="popupButton" onClick={togglePopup}>Оставить заявку <img src={plane} alt="airplane"/></button>
+       <button  className="popupButton" onClick={togglePopup}>Оставить заявку <img className="button-image" src={whitePlane} alt="plane" /></button>
        </div>
            
            
