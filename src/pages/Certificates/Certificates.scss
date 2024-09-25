@@ -55,7 +55,7 @@
   }
 }
 
-.certificates {
+.certificates-title {
   @include text-styles(40px, 700, $orange-color);
 
   @media screen and (max-width: 768px) {

@@ -9,7 +9,7 @@ const Certificates = () => {
         <main>
             <section className="cert">
                 <div className="cert-container">
-                    <h1 className="certificates">Подарочные сертификаты</h1>
+                    <h1 className="certificates-title">Подарочные сертификаты</h1>
                     <div className="box box1">
                         <img className="number" src={number1} alt="number1"/>
                         <div className="box-text">Почувствуйте себя волшебниками, <span className="box-text-orange">подарите
