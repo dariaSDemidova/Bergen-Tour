@@ -1,37 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+.swiper {
+  margin-top: 70px;
+  max-width: 500px;
+  &-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
-
-
-.swiper-container {
-    width: 800px;
-    height: 200px;
-    line-height: 200px;
-    text-align: center;
-}
-
-.swiper-slide {
-    background-color: rgb(244, 251, 251);
-    color: #fff;
-    font-size: 25px;
-}
-
-.swiper-slide:nth-child(2) {
-    background-color: rgb(242, 247, 246);
-}
-
-.swiper-slide:nth-child(3) {
-    background-color: rgb(245, 248, 247);
-}
-
-.swiper-slide:nth-child(4) {
-    background-color: rgb(247, 250, 250);
-}
-
-.swiper-slide:nth-child(5) {
-    background-color: rgb(242, 245, 243);
-}
-

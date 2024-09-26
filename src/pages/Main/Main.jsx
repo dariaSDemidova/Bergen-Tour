@@ -85,7 +85,7 @@ const Main = () => {
 
       <section className="reviews">
         <div className="container">
-          <h2 className="reviews__title">Отзывы от наших клиентов</h2>
+          <h2 className="reviews__title">Отзывы наших клиентов</h2>
           <Reviews />
         </div>
       </section>
@@ -110,7 +110,7 @@ const Main = () => {
 
 			<section className="tours">
 				<div className="container">
-					<h2 className="tours__header"><span className="tours__header-orange">Готовые турпакеты и отдельные услуги</span><br/>по честным ценам</h2>
+					<h2 className="tours__header"><span>Готовые турпакеты и отдельные услуги</span><br/>по честным ценам</h2>
 					<h3 className="tours__subheader">Если найдете дешевле, то свяжитесь с нами</h3>
 					<Tours/>
 				</div>
