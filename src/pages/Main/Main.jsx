@@ -45,7 +45,7 @@ const Main = () => {
           <div className="why__block">
             <div className="why__block-contacts">
               <p>+7 778 900 67 21</p>
-              <button id="why-contacts__button" className="contacts__button why__block-contacts-btn">заказать обратный звонок</button>
+              <button id="contacts__button" className="contacts__button why__block-contacts-btn" onClick={togglePopup}>заказать обратный звонок</button>
             </div>
             <ul className="why__block-list">
               <li>Наш сервис порадует даже самых искушенных путешественников!</li>
@@ -69,7 +69,7 @@ const Main = () => {
               <li><img src={travel} alt="travel-explore"/>продажа турпакетов</li>
               <li><img src={accessibility} alt="accessibility"/>индивидуальные туры</li>
               <li><img src={person} alt="person-add"/>групповые туры</li>
-              <li><img src={bag} alt="bag"/>организация деловых поездок, корпоративных<br/>мероприятий и отдыха сотрудников вашей компании</li>
+              <li><img src={bag} alt="bag"/>организация деловых поездок, корпоративных мероприятий и отдыха сотрудников вашей компании</li>
               <li><img src={umbrella} alt="umbrella"/>лечебно-оздоровительные туры</li>
             </ul>
             <ul className="offerings__list">
@@ -94,7 +94,9 @@ const Main = () => {
         <div className="container">
           <h2 className="certificates__title">Подарочные сертификаты</h2>
           <div className="certificates__content">
-            <img src={Certificate} alt="certificate" />
+            <div>
+              <img src={Certificate} alt="certificate" />
+            </div>
             <div className="certificates__content-right">
               <div className="certificates__content-text">
                 <p><span>Скидка 3%</span> при покупке от 10 сертификатов</p>
@@ -111,7 +113,7 @@ const Main = () => {
 			<section className="tours">
 				<div className="container">
 					<h2 className="tours__header"><span>Готовые турпакеты и отдельные услуги</span><br/>по честным ценам</h2>
-					<h3 className="tours__subheader">Если найдете дешевле, то свяжитесь с нами</h3>
+					<h3 className="tours__subheader">Если найдете дешевле, свяжитесь с нами</h3>
 					<Tours/>
 				</div>
     	</section>
