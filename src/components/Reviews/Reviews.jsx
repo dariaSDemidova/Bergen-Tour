@@ -46,6 +46,7 @@ const Reviews = () => {
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
+        loop={true}
       >
         <SwiperSlide><img src={review1} alt='img1' onClick={() => handleImageClick(fullReview1)}/></SwiperSlide>
         <SwiperSlide><img src={review2} alt='img2' onClick={() => handleImageClick(fullReview2)}/></SwiperSlide>

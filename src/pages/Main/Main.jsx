@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import Hero from '../../components/Hero/Hero';
 import Tours from '../../components/Tours/Tours';
@@ -28,12 +28,24 @@ const Main = () => {
     setIsPopupOpen(!isPopupOpen);
   };
 
+  useEffect(() => {
+    if (isPopupOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+
+    return () => {
+        document.body.style.overflow = 'auto';
+    };
+  }, [isPopupOpen]);
+
   return (
     <>
       <Hero/>
 
       <section className="search">
-        <div className="container">
+        <div className="container search__container">
           <h2 className="search__title">Платите меньше - <span>путешествуйте больше</span></h2>
           <Link to="/search" className="search__button">Найти тур<img className="button-image" src={whitePlane} alt="plane" /></Link>
         </div>
