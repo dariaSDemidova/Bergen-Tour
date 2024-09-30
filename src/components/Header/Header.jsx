@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import logo from '../../assets/icons/logo.svg';
 import whatsapp from '../../assets/icons/whatsapp.svg';
 import { Link } from 'react-router-dom';
@@ -16,6 +16,18 @@ const Header = () => {
     const togglePopup = () => {
         setIsPopupOpen(!isPopupOpen);
     };
+
+    useEffect(() => {
+        if (isPopupOpen) {
+          document.body.style.overflow = 'hidden';
+        } else {
+          document.body.style.overflow = 'auto';
+        }
+
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+      }, [isPopupOpen]);
 
     return (
         <header className="header">
