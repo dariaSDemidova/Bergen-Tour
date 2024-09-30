@@ -12,7 +12,6 @@ import Error from './pages/Error/Error';
 const App = () => {
   return (
     <Router>
-    <>
       <Header/>
         <Routes>
           <Route path="/" element={<Main/>} />
@@ -23,7 +22,6 @@ const App = () => {
           <Route path="*" element={<Error/>} />
         </Routes>
       <Footer/>
-    </>
     </Router>
   );
 }
