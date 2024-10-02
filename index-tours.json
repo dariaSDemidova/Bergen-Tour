@@ -3,7 +3,7 @@
     {
       "id": 1,
       "price_main": "2 175 000",
-      "img": "./src/assets/images/tours/image1.jpeg",
+      "img": "assets/images/tours/image1.jpeg",
       "title_main": "Англия и Шотландия",
       "place": "Англия и Шотландия",
       "date_main": ["с 1 по 12 мая"],
@@ -47,7 +47,7 @@
     {
       "id": 2,
       "price_main": "1 450 000",
-      "img": "./src/assets/images/tours/image2.jpeg",
+      "img": "assets/images/tours/image2.jpeg",
       "title_main": "Евротур",
       "place": "Европа",
       "date_main": ["с 16 по 24 августа"],
@@ -86,7 +86,7 @@
     {
       "id": 3,
       "price_main": "1 695 000",
-      "img": "./src/assets/images/tours/image3.jpeg",
+      "img": "assets/images/tours/image3.jpeg",
       "title_main": "Япония и Китай",
       "place": "Япония и Китай",
       "date_main": ["с 22 сентября по 3 октября"],
@@ -154,7 +154,7 @@
     {
       "id": 4,
       "price_main": "1 550 000",
-      "img": "./src/assets/images/tours/image4.jpeg",
+      "img": "assets/images/tours/image4.jpeg",
       "title_main": "Автотур по Исландии и Швейцарии",
       "place": "Исландия - Швейцария",
       "date_main": ["с 3 по 13 июня"],
@@ -225,7 +225,7 @@
     {
       "id": 5,
       "price_main": "740 000",
-      "img": "./src/assets/images/tours/image5.jpeg",
+      "img": "assets/images/tours/image5.jpeg",
       "title_main": "Концерт Enrique Iglesias в Дубай",
       "place": "Дубай",
       "date_main": ["с 11 по 15 сентября"],
@@ -263,7 +263,7 @@
     {
       "id": 6,
       "price_main": "1 290 000",
-      "img": "./src/assets/images/tours/image6.jpeg",
+      "img": "assets/images/tours/image6.jpeg",
       "title_main": "Сказочное Бали + Филиппины",
       "place": "Бали - Филиппины",
       "date_main": ["с 14 по 21 июля", "с 18 по 31 августа"],
@@ -313,7 +313,7 @@
     {
       "id": 7,
       "price_main": "1 650 000",
-      "img": "./src/assets/images/tours/image7.jpeg",
+      "img": "assets/images/tours/image7.jpeg",
       "title_main": "Италия: большой тур",
       "place": "Италия",
       "date_main": ["с 20 по 28 июня", "с 31 августа по 8 сентября"],
@@ -353,7 +353,7 @@
     {
       "id": 8,
       "price_main": "2 800 000",
-      "img": "./src/assets/images/tours/image8.jpeg",
+      "img": "assets/images/tours/image8.jpeg",
       "title_main": "Австралия и Новая Зеландия",
       "place": "Австралия и Новая Зеландия",
       "date_main": ["с 1 по 13 октября"],
@@ -413,7 +413,7 @@
     {
       "id": 9,
       "price_main": "1 550 000",
-      "img": "./src/assets/images/tours/image9.jpeg",
+      "img": "assets/images/tours/image9.jpeg",
       "title_main": "Концерт Adele в Мюнхене",
       "place": "Прага-Мюнхен-Гальштатт-Вена",
       "date_main": ["с 7 по 14 августа"],
@@ -454,7 +454,7 @@
     {
       "id": 10,
       "price_main": "2 750 000",
-      "img": "./src/assets/images/tours/image10.jpeg",
+      "img": "assets/images/tours/image10.jpeg",
       "title_main": "Бразилия и Аргентина",
       "place": "Бразилия и Аргентина",
       "date_main": ["с 20 февраля по 4 марта 2025г."],
@@ -496,7 +496,7 @@
     {
       "id": 11,
       "price_main": "1 620 000",
-      "img": "./src/assets/images/tours/image11.jpeg",
+      "img": "assets/images/tours/image11.jpeg",
       "title_main": "Концерт Джастина Тимберлейка в Бельгии",
       "place": "Европа",
       "date_main": ["с 31 июля по 7 августа"],
@@ -535,7 +535,7 @@
     {
       "id": 12,
       "price_main": "1 755 000",
-      "img": "./src/assets/images/tours/image12.jpeg",
+      "img": "assets/images/tours/image12.jpeg",
       "title_main": "Кения - настоящая Африка",
       "place": "Найроби",
       "date_main": ["с 8 по 16 августа"],
@@ -595,7 +595,7 @@
     {
       "id": 13,
       "price_main": "2 600 000",
-      "img": "./src/assets/images/tours/image13.jpeg",
+      "img": "assets/images/tours/image13.jpeg",
       "title_main": "По мотивам Латинской Америки",
       "place": "Колумбия, Эквадор, Перу",
       "date_main": ["с 18 по 27 июля", "c 18 июля по 1 августа"],
@@ -644,7 +644,7 @@
     {
       "id": 14,
       "price_main": "2 700 000",
-      "img": "./src/assets/images/tours/image14.jpeg",
+      "img": "assets/images/tours/image14.jpeg",
       "title_main": "Мадагаскар-Маврикий",
       "place": "Мадагаскар-Маврикий",
       "date_main": ["с 18 по 31 августа", "с 13 по 23 сентября"],
@@ -682,7 +682,7 @@
     {
       "id": 15,
       "price_main": "1 990 000",
-      "img": "./src/assets/images/tours/image15.jpeg",
+      "img": "assets/images/tours/image15.jpeg",
       "title_main": "Summer Camp в Малайзии",
       "place": "Куала-Лумпур",
       "date_main": ["с 30 июня по 21 июля", "с 14 по 21 июля"],
@@ -731,7 +731,7 @@
     {
       "id": 16,
       "price_main": "1 990 000",
-      "img": "./src/assets/images/tours/image16.jpeg",
+      "img": "assets/images/tours/image16.jpeg",
       "title_main": "Тур по США",
       "place": "Нью-Йорк-Лас-Вегас-Гранд-каньон",
       "date_main": ["с 15 по 26 сентября"],
