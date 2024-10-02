@@ -68,14 +68,14 @@
 
     &:hover {
       .button-image {
-        content: url('../../assets/icons/blue-plane.svg');
+        content: url('/assets/icons/blue-plane.svg');
       }
     }
   }
 }
 
 .why {
-  background: url('../../assets/images/bg3.jpg') center center / cover no-repeat;
+  background: url('/assets/images/bg3.jpg') center center / cover no-repeat;
   &__container {
     display: flex;
     justify-content: space-between;
@@ -158,7 +158,7 @@
         align-items: center;
   
         &:before {
-          content: url("../../assets/icons/plane.svg");
+          content: url("/assets/icons/plane.svg");
           width: 25px;
           height: 25px;
           margin-right: 20px;
@@ -283,7 +283,7 @@
 }
 
 .certificates {
-  background: url('../../assets/images/beach.jpeg') no-repeat center center / cover;
+  background: url('/assets/images/beach.jpeg') no-repeat center center / cover;
   min-height: 600px;
 
   &__title {

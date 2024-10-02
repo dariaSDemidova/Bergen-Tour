@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import logo from '../../assets/icons/logo.svg';
-import whatsapp from '../../assets/icons/whatsapp.svg';
+import logo from '/assets/icons/logo.svg';
+import whatsapp from '/assets/icons/whatsapp.svg';
 import { Link } from 'react-router-dom';
 import Popup from '../Popup/Popup';
 import './Header.scss';
@@ -19,15 +19,15 @@ const Header = () => {
 
     useEffect(() => {
         if (isPopupOpen) {
-          document.body.style.overflow = 'hidden';
+            document.body.style.overflow = 'hidden';
         } else {
-          document.body.style.overflow = 'auto';
+            document.body.style.overflow = 'auto';
         }
 
         return () => {
             document.body.style.overflow = 'auto';
         };
-      }, [isPopupOpen]);
+    }, [isPopupOpen]);
 
     return (
         <header className="header">

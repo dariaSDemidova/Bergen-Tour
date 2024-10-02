@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-import arrowLeft from '../../assets/icons/arrow-left.svg';
-import arrowRight from '../../assets/icons/arrow-right.svg';
+import arrowLeft from '/assets/icons/arrow-left.svg';
+import arrowRight from '/assets/icons/arrow-right.svg';
 import './ServiceSlider.scss';
 
 const ServiceSlider = ({ images}) => {

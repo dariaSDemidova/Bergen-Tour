@@ -58,7 +58,7 @@
         margin: 0; 
         border-radius: 25px;
         appearance: none;
-        background-image: url('../../assets/icons/down-arrow.svg'); 
+        background-image: url('/assets/icons/down-arrow.svg'); 
         background-repeat: no-repeat;
         background-position: right .7em top 50%, 0 0;
         background-size: .90em auto, 100%;
@@ -94,7 +94,7 @@
     
         &:hover {
             .button-image {
-                content: url('../../assets/icons/blue-plane.svg');
+                content: url('/assets/icons/blue-plane.svg');
             }
         }
     

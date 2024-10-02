@@ -1,8 +1,8 @@
 import './Certificates.scss';
 
-import number1 from "../../assets/icons/number1.svg"
-import number2 from "../../assets/icons/number2.svg"
-import number3 from "../../assets/icons/number3.svg"
+import number1 from "/assets/icons/Number1.svg"
+import number2 from "/assets/icons/Number2.svg"
+import number3 from "/assets/icons/Number3.svg"
 
 const Certificates = () => {
     return (

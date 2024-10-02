@@ -2,12 +2,12 @@ import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination} from 'swiper/modules';
 
-import review1 from '../../assets/images/reviews/review_1.jpg';
-import review2 from '../../assets/images/reviews/review_2.jpg';
-import review3 from '../../assets/images/reviews/review_3.jpg';
-import fullReview1 from '../../assets/images/reviews/fullReview1.jpg';
-import fullReview2 from '../../assets/images/reviews/fullReview2.jpg';
-import fullReview3 from '../../assets/images/reviews/fullReview3.jpg';
+import review1 from '/assets/images/reviews/review_1.jpg';
+import review2 from '/assets/images/reviews/review_2.jpg';
+import review3 from '/assets/images/reviews/review_3.jpg';
+import fullReview1 from '/assets/images/reviews/fullReview1.jpg';
+import fullReview2 from '/assets/images/reviews/fullReview2.jpg';
+import fullReview3 from '/assets/images/reviews/fullReview3.jpg';
 
 import './Reviews.scss';
 

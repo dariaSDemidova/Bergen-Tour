@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import plane from '../../assets/icons/white-plane.svg';
+import plane from '/assets/icons/white-plane.svg';
 import './Popup.scss';
 
 const Popup = ({ onClose }) => {

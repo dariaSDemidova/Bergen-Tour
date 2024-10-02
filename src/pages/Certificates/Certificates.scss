@@ -1,7 +1,7 @@
 @import '../../styles/mixins';
 
 .cert {
-  background: url('../../assets/images/backgroundCertificates.png') center center/cover no-repeat;
+  background: url('/assets/images/backgroundCertificates.png') center center/cover no-repeat;
 
   &-container {
     display: flex;

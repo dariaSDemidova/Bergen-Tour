@@ -1,13 +1,13 @@
-import travel from '../../assets/icons/travel-explore.svg';
-import accessibility from '../../assets/icons/accessibility.svg';
-import person from '../../assets/icons/person-add.svg';
-import bag from '../../assets/icons/bag.svg';
-import umbrella from '../../assets/icons/umbrella.svg';
-import check from '../../assets/icons/person-check.svg';
-import hand from '../../assets/icons/hand-with-heart.svg';
-import sailing from '../../assets/icons/sailing.svg';
-import hotel from '../../assets/icons/hotel.svg';
-import plane from '../../assets/icons/plane.svg';
+import travel from '/assets/icons/travel-explore.svg';
+import accessibility from '/assets/icons/accessibility.svg';
+import person from '/assets/icons/person-add.svg';
+import bag from '/assets/icons/bag.svg';
+import umbrella from '/assets/icons/umbrella.svg';
+import check from '/assets/icons/person-check.svg';
+import hand from '/assets/icons/hand-with-heart.svg';
+import sailing from '/assets/icons/sailing.svg';
+import hotel from '/assets/icons/hotel.svg';
+import plane from '/assets/icons/plane.svg';
 import './About.scss';
 
 const About = () => {

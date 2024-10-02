@@ -1,7 +1,7 @@
-import logo from '../../assets/icons/logo.svg';
-import telegram from '../../assets/icons/telegram.svg';
-import whatsapp from '../../assets/icons/whatsapp.svg';
-import instagram from '../../assets/icons/instagram.svg';
+import logo from '/assets/icons/logo.svg';
+import telegram from '/assets/icons/telegram.svg';
+import whatsapp from '/assets/icons/whatsapp.svg';
+import instagram from '/assets/icons/instagram.svg';
 import { Link } from 'react-router-dom';
 import './Footer.scss';
 
