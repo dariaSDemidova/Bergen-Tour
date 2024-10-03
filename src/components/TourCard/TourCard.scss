@@ -64,7 +64,7 @@
       }
       &:before {
         position: absolute;
-        content: url("../../assets/icons/airplane-search.svg");
+        content: url("/assets/icons/airplane-search.svg");
         display: block;
         left: 4px;
         width: 23px;
@@ -80,7 +80,7 @@
         padding-left: 34px;
         &:before {
           position: absolute;
-          content: url("../../assets/icons/calendar-clock.svg");
+          content: url("/assets/icons/calendar-clock.svg");
           display: block;
           left: 2px;
           width: 23px;

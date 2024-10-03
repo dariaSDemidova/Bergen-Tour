@@ -330,7 +330,7 @@
 
     img {
       max-width: 450px;
-      height: fit-content;
+      height: auto;
 
       @media screen and (max-width: 1440px) {
         max-width: 400px;

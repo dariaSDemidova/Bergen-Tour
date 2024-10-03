@@ -87,7 +87,7 @@
         width: 200px;
       }
       &::before {
-        content: url("../../assets/icons/calendar-modal.svg");
+        content: url("/assets/icons/calendar-modal.svg");
         width: 34px;
         height: 34px;
       }
@@ -121,7 +121,7 @@
       margin-bottom: 15px;
       &:before {
         position: absolute;
-        content: url("../../assets/icons/arrow-tours.svg");
+        content: url("/assets/icons/arrow-tours.svg");
         left: -40px;
         top: -4px;
         width: 34px;
