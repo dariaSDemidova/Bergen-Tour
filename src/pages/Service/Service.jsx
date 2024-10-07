@@ -1,7 +1,7 @@
-import pic1 from '/assets/images/service-slider/pic1.jpeg';
-import pic2 from '/assets/images/service-slider/pic2.jpeg';
-import pic3 from '/assets/images/service-slider/pic3.jpeg';
-import pic4 from '/assets/images/service-slider/pic4.jpeg';
+import pic1 from '/assets/images/service-slider/pic1.jpg';
+import pic2 from '/assets/images/service-slider/pic2.jpg';
+import pic3 from '/assets/images/service-slider/pic3.jpg';
+import pic4 from '/assets/images/service-slider/pic4.jpg';
 
 import ServiceSlider from '../../components/ServiceSlider/ServiceSlider';
 import './Service.scss';

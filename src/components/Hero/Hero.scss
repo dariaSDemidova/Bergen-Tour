@@ -2,7 +2,7 @@
 @import '../../styles/mixins.scss';
 
 .hero {
-    background: url('/assets/images/bg1.jpg') center center/cover no-repeat;
+    background: url('/assets/images/bg1-full.jpg') center center/cover no-repeat;
     min-height: 986px;
     position: relative;
     display: flex;
@@ -12,6 +12,7 @@
     }
 
     @media screen and (max-width: 425px) {
+        background-image: url('/assets/images/bg1-mobile.jpg');
         background-position: 0 center;
         align-items: flex-end;
     }

@@ -2,14 +2,16 @@
   margin-top: 70px;
   max-width: 500px;
 
-  @media screen and (max-width: 768px) {
-    max-width: 400px;
-  }
-
   @media screen and (max-width: 425px) {
-    max-width: 300px;
     margin-top: 40px;
   }
+
+  &-button-next, &-button-prev {
+    @media screen and (max-width: 425px) {
+      display: none !important;
+    }
+  }
+
   &-slide {
     &:hover {
       cursor: pointer;
