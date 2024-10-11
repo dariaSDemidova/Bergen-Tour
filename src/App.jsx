@@ -11,7 +11,7 @@ import Error from './pages/Error/Error';
 
 const App = () => {
   return (
-    <Router basename="/Bergen-Tour">
+    <Router>
       <Header/>
         <Routes>
           <Route path="/" element={<Main/>} />
